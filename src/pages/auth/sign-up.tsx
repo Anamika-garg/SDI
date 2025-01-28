@@ -50,6 +50,7 @@ const SignUp = () => {
             {...register('fullName')}
             type="text"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            placeholder='Enter your full Name'
           />
           {errors.fullName && (
             <p className="mt-1 text-sm text-red-600">{errors.fullName.message}</p>
@@ -64,6 +65,7 @@ const SignUp = () => {
             {...register('email')}
             type="email"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            placeholder='Enter your email'
           />
           {errors.email && (
             <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -78,6 +80,7 @@ const SignUp = () => {
             {...register('password')}
             type="password"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            placeholder='Enter your password'
           />
           {errors.password && (
             <p className="mt-1 text-sm text-red-600">{errors.password.message}</p>
@@ -92,6 +95,7 @@ const SignUp = () => {
             {...register('confirmPassword')}
             type="password"
             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            placeholder='Confirm Password'
           />
           {errors.confirmPassword && (
             <p className="mt-1 text-sm text-red-600">{errors.confirmPassword.message}</p>
